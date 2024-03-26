@@ -1,0 +1,184 @@
+@use '_var';
+
+.ficha{
+    display: grid;
+    place-items: center;
+}
+
+#aviso{
+    color: red;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+}
+
+.visible{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45rem;
+    border: 2px solid rgb(173, 173, 173);
+    margin: 1rem;
+    border-radius: 1.5rem;
+    
+    h2{
+        display: flex;
+        justify-content: center;
+        font-family: var.$title-font; 
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+        text-align: center;
+        margin: 5rem;
+    }
+    button{
+        border: 3px solid black;
+        border-radius: 20px;
+        cursor: pointer;
+        background: transparent;
+        padding: 5px;
+        margin-left: 1rem;
+    }
+}
+
+.invisible{
+    display: none;
+    h3{
+        margin: 0.5rem;
+        font-size: 1.5rem;
+        font-family: var.$title-font; 
+    }
+    p{
+        font-size: 1.5em;
+        text-align: center;
+        margin: 2rem;
+    }
+}
+
+.form{
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    margin: 1rem 10rem 1rem 10rem;
+    text-decoration: none;
+    color: black;
+    border-radius:10px;
+    cursor: pointer;
+    font-family: var.$title-font; 
+}
+.form:hover{
+    background: rgb(102, 105, 158);
+    color: #fff;
+    box-shadow: 0 0 11px rgba(12, 11, 11, 0.418);
+}
+
+form{
+    display: none;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    label{
+        font-size: 1.2rem;
+        font-family: var.$title-font;
+    }
+    input{
+        margin-right: 1rem;
+    }
+}
+
+#caracteristicas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    #nome{
+        width: 15rem;
+    }
+    #idade{
+        width: 1.5rem;
+    }
+}
+
+#traço{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input{
+        width: 2rem;
+    }
+}
+
+#atributos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    input{
+        width: 2rem;
+    }
+}
+
+#submit{
+    position: absolute;
+    left: 50%;
+    background-color: transparent;
+    font-size: 1.5rem;
+    border: none;
+    padding:15px;
+    min-height:2rem; 
+    min-width: 10rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    border: 2px #0a0a23 solid;
+    cursor: pointer;
+}
+
+#ficha-final{
+    display: none;
+    position: absolute;
+    left: 50%;
+    text-align: center;
+}
+
+.ficha h3{
+    display: flex;
+    justify-content: center;
+    font-family: var.$title-font;
+    font-size: 1.5rem;
+}
+
+.ficha p{
+    margin: 1rem;
+    font-size: 1.3rem;
+    font-family: var.$text-font;
+}
+
+input[type = radio]{
+    margin: 1rem;
+}
+
+
+
+.sistemas{
+    border: 1px solid black;
+    margin-bottom: 2.5rem;
+    box-shadow: 5px 10px 8px #888888;
+    border-radius: 10px;
+    h3{
+        color: #fff;
+        background: black;
+        border-bottom: 1px solid black;
+        border-radius: 10px;
+    }
+    li{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 0.5rem;
+        font-family: var.$text-font;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+    }
+}

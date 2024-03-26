@@ -1,0 +1,320 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+#home {
+  min-height: calc((0.05vw + 0.1vh) * 25);
+  box-shadow: 0 0 0 black, 0 0 6em #633508 inset;
+  background: #fffef0;
+  margin: 0;
+  padding: 2em;
+}
+
+h1 {
+  display: grid;
+  place-items: center;
+  font-size: 3rem;
+  font-family: "Righteous", cursive;
+}
+
+.regras {
+  margin: 1rem;
+}
+.regras a {
+  color: white;
+  text-decoration: none;
+  background-color: #996d0f;
+  margin-right: 5px;
+}
+.regras h2 {
+  font-size: 2em;
+  font-family: "Righteous", cursive;
+  place-items: left;
+  border-bottom: 1px solid #b9732c;
+}
+.regras h2 a {
+  color: white;
+  text-decoration: none;
+  background-color: #b9732c;
+  margin-right: 5px;
+}
+.regras h3 {
+  font-size: 1.6em;
+  color: white;
+  width: 15rem;
+  background-color: #5b90b3;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.regras p {
+  margin: 0.5rem;
+  font-size: 1.3em;
+  font-family: "Playfair Display", serif;
+}
+.regras li {
+  margin-top: 0.5rem;
+  font-size: 1.3em;
+  font-family: "Playfair Display", serif;
+}
+.regras table, .regras th, .regras td {
+  padding: 0.2rem;
+  margin-top: 15px;
+  font-size: 1rem;
+  border: 1px solid;
+}
+.regras th:nth-child(1) {
+  color: white;
+  background-color: blue;
+}
+.regras th:nth-child(2) {
+  color: white;
+  background-color: rgb(162, 0, 255);
+}
+.regras th:nth-child(3) {
+  color: white;
+  background-color: rgb(255, 174, 0);
+}
+.regras th:nth-child(4) {
+  color: white;
+  background-color: rgb(255, 0, 0);
+}
+.regras th:nth-child(5) {
+  animation: prism 2s infinite alternate;
+}
+.regras img {
+  display: grid;
+  place-items: center;
+  margin: 1rem auto;
+  background-color: white;
+  max-width: 50%;
+  height: auto;
+  border: 5px solid black;
+  border-radius: 15px;
+}
+
+@keyframes prism {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  75% {
+    background-color: green;
+  }
+  100% {
+    background-color: red;
+  }
+}
+#go {
+  display: grid;
+  place-items: center;
+  margin: 1rem auto;
+  background-color: transparent;
+  font-size: 1.5rem;
+  border: none;
+  padding: 15px;
+  min-height: 2rem;
+  min-width: 10rem;
+  border-radius: 10px;
+  border: 2px #0a0a23 solid;
+}
+
+#go:hover {
+  background-color: #2f2f74;
+  color: white;
+}
+
+.ficha {
+  display: grid;
+  place-items: center;
+}
+
+#aviso {
+  color: red;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+}
+
+.visible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45rem;
+  border: 2px solid rgb(173, 173, 173);
+  margin: 1rem;
+  border-radius: 1.5rem;
+}
+.visible h2 {
+  display: flex;
+  justify-content: center;
+  font-family: "Righteous", cursive;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  margin: 5rem;
+}
+.visible button {
+  border: 3px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+  background: transparent;
+  padding: 5px;
+  margin-left: 1rem;
+}
+
+.invisible {
+  display: none;
+}
+.invisible h3 {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  font-family: "Righteous", cursive;
+}
+.invisible p {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 2rem;
+}
+
+.form {
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  margin: 1rem 10rem 1rem 10rem;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Righteous", cursive;
+}
+
+.form:hover {
+  background: rgb(102, 105, 158);
+  color: #fff;
+  box-shadow: 0 0 11px rgba(12, 11, 11, 0.418);
+}
+
+form {
+  display: none;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+form label {
+  font-size: 1.2rem;
+  font-family: "Righteous", cursive;
+}
+form input {
+  margin-right: 1rem;
+}
+
+#caracteristicas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+#caracteristicas #nome {
+  width: 15rem;
+}
+#caracteristicas #idade {
+  width: 1.5rem;
+}
+
+#traço {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#traço input {
+  width: 2rem;
+}
+
+#atributos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+#atributos input {
+  width: 2rem;
+}
+
+#submit {
+  position: absolute;
+  left: 50%;
+  background-color: transparent;
+  font-size: 1.5rem;
+  border: none;
+  padding: 15px;
+  min-height: 2rem;
+  min-width: 10rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  border: 2px #0a0a23 solid;
+  cursor: pointer;
+}
+
+#ficha-final {
+  display: none;
+  position: absolute;
+  left: 50%;
+  text-align: center;
+}
+
+.ficha h3 {
+  display: flex;
+  justify-content: center;
+  font-family: "Righteous", cursive;
+  font-size: 1.5rem;
+}
+
+.ficha p {
+  margin: 1rem;
+  font-size: 1.3rem;
+  font-family: "Playfair Display", serif;
+}
+
+input[type=radio] {
+  margin: 1rem;
+}
+
+.sistemas {
+  border: 1px solid black;
+  margin-bottom: 2.5rem;
+  box-shadow: 5px 10px 8px #888888;
+  border-radius: 10px;
+}
+.sistemas h3 {
+  color: #fff;
+  background: black;
+  border-bottom: 1px solid black;
+  border-radius: 10px;
+}
+.sistemas li {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0.5rem;
+  font-family: "Playfair Display", serif;
+}
+.sistemas p {
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=style.css.map */

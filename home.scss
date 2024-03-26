@@ -1,0 +1,121 @@
+@use '_var';
+
+#home{
+    min-height: calc((0.05vw + 0.1vh) * 25);
+    box-shadow: 0 0 0 black, 0 0 6em #633508 inset;
+    background: #fffef0;
+    margin: 0;
+    padding: 2em;
+}
+h1{
+    display: grid;
+    place-items: center;
+    font-size: 3rem;
+    font-family: var.$title-font;
+}
+
+.regras{
+    margin: 1rem;
+    a{
+        color: white;
+            text-decoration: none;
+            background-color: #996d0f;
+            margin-right: 5px;
+    }
+    h2{
+        a{
+            color: white;
+            text-decoration: none;
+            background-color: #b9732c;
+            margin-right: 5px;
+        }
+        font-size: 2em;
+        font-family: var.$title-font;
+        place-items: left;
+        border-bottom: 1px solid #b9732c; 
+    }
+    
+    h3{
+        font-size: 1.6em;
+        color: white;
+        width: 15rem;
+        background-color: #5b90b3;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
+    p{
+        margin: 0.5rem;
+        font-size: 1.3em;
+        font-family: var.$text-font;
+    }
+    li{
+        margin-top: 0.5rem;
+        font-size: 1.3em;
+        font-family: var.$text-font;
+    }
+
+    table,th,td{
+        padding: 0.2rem;
+        margin-top: 15px;
+        font-size: 1rem;
+        border: 1px solid;
+    }
+    th:nth-child(1) {
+        color: white;
+        background-color: blue;
+    }
+    th:nth-child(2) {
+        color: white;
+        background-color: rgb(162, 0, 255);
+    }
+    th:nth-child(3) {
+        color: white;
+        background-color: rgb(255, 174, 0);
+    }
+    th:nth-child(4) {
+        color: white;
+        background-color: rgb(255, 0, 0);
+    }
+    th:nth-child(5) {
+        animation: prism 2s infinite alternate;
+    }
+
+    img{
+        display: grid;
+        place-items: center;
+        margin: 1rem auto;
+        background-color: white;
+        max-width: 50%;
+        height: auto;
+        border: 5px solid black;
+        border-radius: 15px;
+    }
+}
+
+@keyframes prism {
+    0%   {background-color:red}
+    25%  {background-color:yellow}
+    50%  {background-color:blue}
+    75%  {background-color:green}
+    100% {background-color:red}
+}
+
+#go{
+    display: grid;
+    place-items: center;
+    margin: 1rem auto;
+    background-color: transparent;
+    font-size: 1.5rem;
+    border: none;
+    padding:15px;
+    min-height:2rem; 
+    min-width: 10rem;
+    border-radius: 10px;
+    border: 2px #0a0a23 solid;
+}
+
+#go:hover{
+    background-color: #2f2f74;
+    color: white;
+}

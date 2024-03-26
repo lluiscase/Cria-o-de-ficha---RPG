@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pag 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="home">
+    <div id="welcome">
+        <h1>Bem vindo a expedição à MORKE</h1>
+    </div>
+
+    <!--Atributos(2 div combate,caracteristicas), pericias, testes mental
+    teste de combate, teste de atributos, teste de pericias, testes do mestre 
+    movimentação(perseguições,ações),Dados, Ajustes de classes-->
+    <section class="regras">
+        <h2><a>1</a>Atributos</h2>
+        <!--Atributos-->
+        <div>
+            <h3>Combate</h3>
+            <p>Atributos de combate são únicos e podem ser mudados durante testes, perseguições e lutas. Sendo distribuídos para cada classe pontos que definem as estatísticas abaixo.</p>
+            <ul>
+                <li><a>Vida:</a>Tendo como seu máximo de distribuição 20 pontos. Vida nada mais é o quanto de dano que o jogador poderá sofrer até vir a óbito quando chegar a 0. A vida também está atrelada a efeitos e o mental. Alguns exemplos de efeitos como sangramento, envenenamento afetam este atributo, assim como o mental que se chegando a 0 pode matar o personagem.
+                    </li>
+                <li><a>Defesa:</a>Tendo como seu máximo de distribuição 10 pontos. Defesa é o atributo que estabelece resistência a dano e efeitos.
+                    Este atributo será utilizado nas seguintes pericias: <i>fortitude</i>
+                    </li>
+                <li><a>Força:</a>Tendo como seu máximo de distribuição 10 pontos. Força é o atributo que será utilizado em testes para dar dano ao adversário e/ou fazer ações que exijam esforço físico. 
+                    Este atributo será utilizado nas seguintes perícias: Arremesso, corpo-corpo, armas                    
+                    </li>
+                <li><a>Mental:</a>2D6 * 6. Mental é o atributo responsável 
+                    por sua sanidade e nível de exposição ao surreal/místico/
+                    divino. Quanto mais mental é perdido mais suas ações pode 
+                    se deteriorar, podendo lhe causar certos transtornos ou 
+                    até a morte. Sanidade será mais bem descrito em uma sessão
+                     a parte.
+                    Este atributo será utilizado nas seguintes pericias:Ritual, inspiração
+                    </li>
+            </ul>
+            <h3>Traços</h3>
+            <ul>
+                <li><a>Destreza: </a>É o quão atletico e furtivo seu personagem é em relação aos ambientes e inimigos do universo apresentado. Este atributo é baseado pela média de suas perícias.
+                    Este atributo será utilizado nas seguintes pericias: esquiva, furtividade, escalar, corrida, controle de respiração
+                    </li>
+                <li><a>Conhecimento:</a>Se relaciona ao saber do universo que o seu personagem vive e ao que ele se relaciona, arte, religião, busca de recursos. Este atributo é baseado pela média de suas pericias.
+                    Este atributo será utilizado nas seguintes pericias Arte e ofícios, encontrar, navegação, Antropologia
+                    </li>
+                <li><a>Carisma:</a>: A forma de relacionamento que você vai adotar aos personagens do universo conforme a situação. Este atributo é baseado pela média de suas pericias.
+                    Este atributo será utilizado nas seguintes pericias: Charme, Intimidação, Lábia
+                    </li>
+                <!--<li><a>Adaptação:</a>Não existe pericias para esse atributo, é uma forma de ajudar o jogador as punições de testes. Este atributo é baseado pela média de seus atributos.</li>-->
+            <!--Combate: vida, defesa e força-->
+        </div>
+        <div>
+            <!--Atributos: tatica, fortitude e etc -->
+        </div>
+    </section>
+    <section class="regras">
+        <h2><a>2</a>Pericias</h2>
+        <p>Perícias são testes que o jogador pode realizar 
+            para fazer certas ações durante seu turno 
+            independente da situação.</p>
+        <p>Todas as ações são divididas entre os atributos do 
+            personagem e as perícias que são estabelecidas 
+            conforme seu nível de especialização naquilo, 
+            sendo assim cada nível lhe dará uma certa 
+            porcentagem de dificuldades para realizar algo e 
+            sendo classificado pelos seguintes testes:
+            Combate, Mental/Sanidade, Atributos, Perícias.
+            </p>
+        <p>Você pode não ter conhecimento nenhum sobre aquilo 
+            ou ser novato, não te impedirá de fazer testes, 
+            mas ter que procurar outras formas de desvendar.
+            Nesta sessão você descobrirá o que cada perícia 
+            faz e os níveis de especialização. Os testes serão 
+            falados nas próximas sessões.
+            </p>
+            <ul>
+                <h3>Como definir seu nível de perícia:</h3>
+                <li>Nação que nasceu: certas nações já 
+                    têm um certo privilégio em certas 
+                    perícias pelo local que vivem e suas 
+                    atividades</li>
+                <li>2d6 * pontos de perícia por nação 
+                    (conhecimento da nação envolta daquele 
+                    aspecto, sendo classificado de 1-6) </li>
+            </ul>
+
+            <table>
+                <h3>Níveis de especialização:</h3>
+                <tr>
+                    <th>Azul</th>
+                    <th>Roxo</th>
+                    <th>Laranja</th>
+                    <th>Vermelho</th>
+                    <th>Prisma</th>
+                </tr>
+                <tr>
+                    <td>1 - 30%</td>
+                    <td>31 - 52%</td>
+                    <td>53 - 74%</td>
+                    <td>75 - 89%</td>
+                    <td>90+</td>
+                </tr>
+            </table>
+
+            <ul>
+                <h3>Perícias: combate</h3>
+                <li><a>Arremesso:</a>São ações para quando o 
+                    jogador queira arremessar armas, 
+                    utensílios, objetos para atrair 
+                    (fazendo som) um inimigo ou em combate. 
+                    2D6 * 6</li>
+                <li><a>Corpo – Corpo: </a>São ações exclusivas 
+                    para o combate numa luta utilizando apenas 
+                    socos e chutes (mesmo sendo fortalecidos por 
+                    algo, não sendo armas de mão)
+                </li>
+                <p>Pontos de nação: Igneo: 5| Aureo: 3| Nômade: 4</p>
+                <li><a>Armas:</a>Esta perícia é para 
+                    personagens que escolheram usar alguma 
+                    arma. Aumentando seu atributo de força 
+                    dependendo do status da arma, entretanto o 
+                    teste dessa perícia mostrará se você é ou 
+                    não eficaz com a arma.</li>
+                    <p>Pontos de nação: Igneo: 1| Aureo: 2| Nômade: 6</p>
+            </ul>
+
+            <ul>
+                <h3>Perícias: resistência</h3>
+                <li><a>Fortitude:</a>Usado para resistências a 
+                    efeitos/causas como, envenenamentos, 
+                    sangramentos etc. Esta perícia não tem 
+                    pontos de nação, logo obter sua média jogue
+                    um 2D6 * 6 
+                </li>
+            </ul>
+
+            <ul>
+                <h3>Perícias: conhecimento</h3>
+                <li><a>Arte e ofícios: </a>Esta perícia 
+                    fornece ao jogador informações sobre itens, 
+                    formas de falsificação e concerto do item. 
+                    Utilizado principalmente por jogadores da 
+                    tribo de arte para efetuar suas artes 
+                    rúnicas.</li>
+                    <p>Pontos de nação: Igneo: 3| Aureo: 6| Nômade: 4</p>
+                    <li><a>Encontrar: </a>Fornece testes para 
+                        encontrar pistas e itens. 
+                        Pontos de nação igualitários, 
+                        2D6 * 6
+                    </li>
+                    <li><a>Navegação: </a>Fornece testes 
+                        para marcar locais, 
+                        rotas de inimigos e 
+                        descobrir passagens. 
+                        Pontos de nação igualitários, 2D6 * 6
+                    </li>
+                <li><a>Antropologia:</a>Habilita o 
+                    usuário a identificar e entender o
+                     modo de vida de um indivíduo através 
+                     da observação. Se o usuário dessa perícia
+                      observa outra cultura por algum tempo, 
+                      estando imerso nela ou utilizando 
+                      registros precisos sobre uma cultura 
+                      extinta, então previsões simples podem 
+                      ser feitas sobre os costumes e a moral 
+                      de tal cultura, mesmo que as evidências 
+                      possam estar incompletas.</li>
+                    <p>Pontos de nação: Igneo: 4| Aureo: 4| Nômade: 6</p>
+                    
+                <li><a>Medicina: </a>Está atrelado tanto a algo cientifico 
+                    quanto algo que remete ao misticismo. É possível criar 
+                    curas com ervas e itens encontrados pelo mapa, também a 
+                    possibilidade de descobrir se algum item pode trazer 
+                    algum efeito/causa.</li>
+                    <p>Pontos de nação: Igneo: 3| Aureo: 4| Nômade: 3</p>
+            </ul>
+
+            <ul>
+                <h3>Perícias: movimentação</h3>
+                <li><a>Esquiva:</a>Permite desviar de ataques, 
+                    investidas conforme sua taxa de movimento. 
+                    2D6 * 6</li>
+                <li><a>Furtividade:</a>Permite se esgueirar por 
+                    locais sem ser percebido, contudo, 
+                    sua taxa de movimento diminui, conforme 
+                    aprimora essa perícia esse debuff pode 
+                    desaparecer (a partir do nível vermelho). 2D6 * 6
+                </li>
+                <li><a>Escalar:</a>Permite subir em locais e 
+                    quanto maior o nível da perícia mais 
+                    chance de escalar locais difíceis. 
+                    2D6 * 6</li>
+                <li><a>Corrida:</a>Aumenta sua taxa de 
+                    movimento, contudo é totalmente exposto 
+                    ao inimigo. 2D6 * 6</li>
+                <li><a>Controle de respiração: </a>Melhor forma 
+                    de se esconder de um inimigo que se 
+                    aproxima em situações de cerco 
+                    ou exposição. Também lhe dará opção 
+                    de realizar mais testes de perícias – 
+                    destreza. 2D6 * 6</li>
+            </ul>
+
+            <ul>
+                <h3>Perícias: mentalidade</h3>
+                <li><a>Ritual:</a>Permite ao jogador efetuar rituais independente da área ou se prevenir de um. Isso faz perder um turno caso esteja em combate. Quanto mais usar certo ritual menos serão suas punições, mas depende do quão insano esteja seu personagem.</li>
+                <p>Pontos de nação: Igneo: 6| Aureo: 3| Nômade: 3</p>
+                <li><a>Inspiração: </a>Permite o jogador a 
+                    inspirar o resto do time dando lhes 
+                    mais chance de efetuar suas ações, 
+                    entretanto essa perícia só pode ser usada 
+                    se seu mental estiver bom. 2D6 * 6</li>
+            </ul>
+
+            <ul>
+                <h3>Perícias: RIZZ</h3>
+                <li><a>Lábia:</a>Lhe dá o poder da enganação, 
+                    pode tanto convencer alguém ou mentir 
+                    quanto interpretar as verdadeiras 
+                    intenções do outro. 2D6 * 6</li>
+                <li><a>Intimidação:</a>Dá ao jogador a 
+                    habilidade de amedrontar o inimigo, 
+                    fazendo o desistir de certa ação ou 
+                    atribui-lo uma ação. 2D6 * 6</li>
+                <li><a>Charme: </a>Dá ao jogador a 
+                    habilidade de flerte, dependendo do 
+                    quão abaixo seja o mental do outro 
+                    pode encantá-lo e atribuir uma ação. 
+                    2D6 * 6</li>
+            </ul>
+        <!--Pericias-->
+    </section>
+    <section class="regras">
+        <h2><a>3</a>Dados</h2>
+        <p><a>D6 –</a> Dentro do sistema serão usados testes de 
+            movimentações, definir a porcentagem das perícias.</p>
+        <p><a>D100(dois d10) –</a> Será utilizado para todos os testes 
+            de perícias, sendo necessário atingir a porcentagem 
+            definida no teste para obter sucesso naquilo que deseja.</p>
+        <p><a>D20 –</a> Será utilizado para punições em testes</p>
+        <p><a>D10 –</a> Qual punição mental você receberá</p>
+        <p><a>Moeda –</a> Este item será utilizado para decidir se 
+            o jogador poderá forçar um teste.</p>
+        <!--Dados-->
+    </section>
+    <section class="regras">
+        <h2><a>4</a>Movimentação</h2>
+        <p><a>Teste de movimentação:</a> teste de destreza 
+            (tirar a porcentagem) e somar com sua vida atual, 
+            sendo necessário tirar mais que o teste de 
+            quem o persegue, para cada sucesso jogue um D6 
+            para ver quantas casas avança. </p>
+        <p><a> Perseguições:</a> Para esse aspecto seguirá na frente 
+            aqueles que tiverem mais destreza (a possibilidade 
+            de outra pessoa estar na área de saída antes de 
+            outros com mais destreza, dando os primeiros turnos a 
+            ele). Tem a possibilidade de esquivar, escalar, 
+            correr nessas situações, sendo que em cada turno um 
+            teste de movimentação e teste de controle de 
+            respiração. Caso falhe no teste de controle de 
+            respiração terá punição ou perca de um turno</p>
+        <p><a>Lugares seguros:</a> O movimento é livre e 
+            não será necessário nenhum teste</p>
+        <!--Movimentação-->
+    </section>
+    <section class="regras">
+        <h2><a>5</a>Efeitos</h2>
+        <p><a>Sangramento:</a>Cortes graves podem causar 
+            esse efeito e irá se agravando com o 
+            passar do tempo sempre iniciando com o 
+            dano de 1 e multiplicando por 2.</p>
+        <p><a>Envenenamento: </a>Consumir algo sem conhecer 
+            ou colocar veneno independente do meio 
+            lhe causará dois tipos de efeitos, náusea 
+            e um dano fixo dependendo da força do veneno 
+            sendo o nível mais forte 6 de dano.</p>
+        <p><a>Náusea:</a>Os acertos em testes se tornam maior 
+            e sua efetividade diminui</p>
+        <p><a>Escuridão:</a>Não tem volta</p>
+        <p><a>Fobia:</a>Parecido com a paranoia, 
+            o personagem começa a imaginar viver 
+            seu pior medo, podendo matá-lo. Causado pelo 
+            contato com um de seus medos ou forçado por algum 
+            inimigo que brinque com a mente.</p>
+        <p><a>Insanidade:</a>Caso o mental esteja zerado 
+            talvez seja impossível retornar quem é. 
+            Podendo lhe causar a morte.</p>
+        <p><a>Raiva:</a>Dá efeito de descontrole, aumentando 
+            sua força, entretanto vai atacar qualquer um. 
+            Sendo obtido por traições, animais, recordações de 
+            lembranças desagradáveis</p>
+        <p><a>Possessão:</a>Uma entidade se apossa de seu corpo 
+            por meio de ritual ou itens corrompidos, sendo 
+            necessário fazer um trato para saber se conseguirá 
+            conseguir conquistar o poder da entidade ou perder o 
+            controle total de seu corpo</p>
+        <p><a>Paranoia:</a>Perca de mental pode começar a 
+            te causar delírios, imaginando coisas que não 
+            existem e duvidando de sua equipe. Podendo te 
+            fazer atacar ou se separar do grupo</p>
+        <!--Efeitos(causa e condição)-->
+    </section>
+    <section class="regras">
+        <h2><a>6</a>Teste mental/sanidade</h2>
+        <h3>Perca de sanidade:</h3>
+        <p>Situações nunca vista, fobias, 
+            encontro com cadáveres em uma situação anormal 
+            para a realidade, a escuridão etc. 
+            podem te diminuir seu mental e causar um efeito 
+            dentro das 4 camadas: raiva, escuridão, paranoia e 
+            insanidade.</p>
+            <p>Para cada perca é jogado um teste de Fortitude, 
+                caso falhe jogará 1d10 que diminuirá seu mental.
+                Quanto mais próximo do 0% mais o efeito persiste 
+                ou se torna permanente.
+                </p>
+        <ul>
+            <h3>Raiva</h3>
+            <li><a>1:</a>Tem vontade de causar dano a si ou a 
+                alguém próximo</li>
+                <li><a>2:</a>Seu sangue começa a ferver, 
+                    se cortar para se esfriar parece bom</li>
+            <h3>Paranoia</h3>
+            <li><a>3:</a>Para onde você olha vê coisas 
+                desagradáveis e seus olhos começam a arder, 
+                você sente à vontade constante de arrancá-los</li>
+                <li><a>4:</a>Falar é impossível. Você sente que tem alguém 
+                    sempre te escutando e tem medo disso</li>
+                <li><a>5:</a>Quando você olha para alguém, a imagem é 
+                    distorcida que te 
+                    relembram cenas perturbadores</li>
+            <h3>Insanidade</h3>
+            <li><a>6:</a>Você não acredita em mais nada. 
+                A partir de agora quem controla é o mestre</li>
+                <li><a>7:</a>Sente como se insetos estivesse 
+                    em suas entranhas e precisa 
+                    tirá-los de alguma forma</li>
+                <li><a>8:</a>Não se lembra de nada.</li>
+            <h3>Escuridão</h3>
+            <li><a>9:</a>A luz te machuca.</li>
+            <li><a>10:</a>Sua determinação se esvaiu, 
+                não tem por que existir, continuar aqui, 
+                apenas sente algo te chamando.</li>
+        </ul>
+
+        <ul>
+            <h3>Recuperar mental: alguns exemplos</h3>
+            <li>Puzzles – 3%</li>
+            <li>Item de recordação de um familiar – 5%</li>
+            <li>Cuidado com um parceiro – 10%</li>
+            <li>Poções – 5%</li>
+        </ul>
+            
+        <!--Teste mental-->
+    </section>
+    <section class="regras">
+        <h2><a>7</a>Teste de combate</h2>
+        <!--Teste de combate-->
+        <p>Faça um teste do tipo de ataque que efetuará 
+            (Ritual, Soco, Armas, Arremesso), se efetivo, 
+            jogue um D6 e some com sua força e subtraia pela 
+            defesa. Dependendo da coisa arremessada, da arma 
+            usada pode haver um bônus</p>
+    </section>
+    <section class="regras">
+        <h2><a>8</a>Teste de pericias</h2>
+        <p>Para qualquer teste referente a uma PERÍCIA, 
+            será rolado dois d10, sendo o primeiro equivale a 
+            dezena e o outro a unidade. Sendo necessário tirar 
+            igual ou menor a porcentagem que o personagem tem 
+            dentro do teste.</p>
+            <p>Existe o sistema de punições onde será 
+                necessário jogar um d20 para saber o quão 
+                punido o jogador será na porcentagem. Os casos 
+                de punições podem ocorrer por algum efeito ou 
+                problema, seja um ambiente que pode te fazer 
+                tropeçar, uma arma que está prestes a se 
+                quebrar ou um delírio que te impossibilita de 
+                efetuar perfeitamente aquela ação.</p>
+                <p>Teste normal – 2d10(1 d10 = Dezena | 1 d10 = Unidade)</p>
+                <p>Teste normal 2d10 – d20</p>
+        <!--Teste de Pericias-->
+    </section>
+    <section class="regras">
+        <h2><a>9</a>Eventos do mestre</h2>
+        <p>São eventos fora do universo que os personagens 
+            vivem, como uma graça/benção para ajudar os 
+            jogadores que gostem de explorar os ambientes 
+            como recompensa, algumas descobertas ou que 
+            passaram por perto</p>
+        <p><a>Poções misteriosas:</a> prateleiras com poções 
+            com rótulos desconhecidos que podem te dar um algum 
+            efeito</p>
+        <p><a>Julgamento:</a>sentar-se em algum local pode 
+            convocar um espírito da igreja de Morke que julgará
+             seu pecado como veracidade, podendo tirar ou 
+             receber algo</p>
+        <p><a>Poço da sorte:</a>retirar o sangue de um animal e 
+            levá-lo a um poço pode te fazer recuperar sua vida 
+            ou te matar</p>
+        <p><a>Cidade do silêncio:</a>caso haja um monstro no 
+            local e seja necessário se esconder ou não fazer 
+            barulho, os jogadores terão até 5 níveis de 
+            exposição, sendo necessário um teste de furtividade 
+            e controle de respiração em cada rodada até o 
+            monstro se afastar. Para cada erro mais o nível 
+            aumenta e mais tempo o monstro permanece</p>
+        <!--Eventos do mestre-->
+    </section>
+    <section class="regras">
+        <h2><a>10</a>Ajustes de classe</h2>
+        <h3>Sangue:</h3>
+        <p>Esta classe não aumentará seu atributo de vida 
+            e não irá se curar a cada combate. A partir de 
+            agora esse extra (sendo 20 para marca de Defesa e 
+            15 para marca de Ataque) poderá ser usado como 
+            cura ou para realização do ritual sem dar dano ao 
+            personagem.</p>
+        <p>Para reabastecimento desse extra 
+            (que se chamará estoque de sangue), 
+            existirá as seguintes formas, sendo que 
+            cada uma terá punições</p>
+        <p>Consumo de carne animal: Pode consumir carne ou 
+            coletar o sangue da carne de animais. Nos dois 
+            casos é necessário fazer um teste de medicina 
+            para descobrir se a alguma possibilidade de 
+            contrair alguma doença que afete sua vida e para 
+            saber quanto de sangue poderá coletar</p>
+        <p>Consumo de carne humana: Pode consumir ou 
+            coletar o sangue. Sendo necessário fazer teste 
+            de medicina e de mental, pois a cada consumo de 
+            carne humana seu mental pode abaixar e te tornar 
+            um canibal, podendo tornar insaciável a vontade de 
+            comer e podendo atacar seu grupo.</p>
+        
+        <div>
+            <h2>Darc</h2>
+            <img src="img/Darc - Personagem da mary - Novo design.png" alt="">
+            <h3>Arte rúnica:</h3>
+            <p>Pode fazer qualquer coisa imaterial, 
+                contanto que tenha combustível em sua 
+                lanterna e material. Será necessário um teste 
+                de arte e ofício + conhecimento</p>
+            <p>Pode fazer qualquer coisa imaterial, 
+                contanto que tenha combustível em sua 
+                lanterna e material. Será necessário um 
+                teste de arte e ofício + conhecimento</p>
+            <h3>Arte rúnica: mudança</h3>
+            <p>Não lhe permitirá mudar o ambiente como bem 
+                desejar. A partir de agora por meio de quadros,
+                 desenhos, lhe permitirá viver o que aconteceu 
+                 naquele dia ou materializar para os demais. 
+                 Contudo tem o perigo do usuário ficar preso 
+                 na arte 
+                Testes de Antropologia + ritual
+                </p>
+        </div>
+
+        <div>
+            <h2>Thomas</h2>
+            <img src="img/Thomas Sigurd - personagem do manoel possuido camiseta vermelha.png" alt="">
+            <h3>Transmutação:</h3>
+            <p>Não será mais permitido a tentativa de uma 
+                transmutação que falho na mesma batalha, caso 
+                ocorra pode haver penalidade, sendo assim o demônio 
+                controlará seu corpo por uma rodada. Para fazer a 
+                transmutação será realizado um teste de mental e um 
+                de conhecimento</p>
+        </div>
+
+        <div>
+            <h2>MLK</h2>
+            <img src="img/MLK - personagem do vaz sem a pele.png" alt="">
+            <ul>
+                <h3>Mordida:</h3>
+                <li>Você troca uma parte de sua defesa por ataque, entretanto quanto mais tempo fica sem a máscara, seu mental decai. Exemplo: 1 de mental para cada rodada sem a máscara</li>
+                <li>Troca toda sua defesa para um possível hitkill, mas seu mental cai para 2, vida diminui pela metade e fica em capaz de fazer ritual para as próximas 2 lutas</li>
+            </ul>
+            <h3>Sem fraqueza: Resistencia do sangue</h3>
+            <p>Esse ritual lhe permite ter resistência passiva 
+                (não precisa fazer teste para ativá-la) a veneno 
+                e frio. Pode passar a um aliado contudo 
+                será necessário perder 2 de vida e um 
+                teste de ritual
+                </p>
+            <h3>Defesa absoluta: Manipulação de sangue</h3>
+            <p>Esse ritual permite o ganho de 3 de defesa por 
+                2 de vida (seja vida ou estoque de sangue). 
+                Tem a permissão de dar o mesmo de defesa para um 
+                aliado se bem-sucedido em um teste de ritual
+                </p>
+        </div>
+
+        <div>
+            <h2>Ryan</h2>
+            <img src="img/Ryan.png" alt="">
+            <h3>Fortificação: Manipulação de sangue</h3>
+            <p>Permite ao usuário o ganho de 3 de força por 
+                2 de vida (seja vida ou estoque de sangue).
+                </p>
+            <h3>Imbuir: Manipulação de sangue</h3>
+            <p>Permite ao usuário atribuir sangue a um objeto, 
+                sendo necessário um teste de conhecimento + 2 de 
+                vida (seja vida ou estoque de sangue).
+                </p>
+        </div>
+        <!--Ajustes de classe-->
+    </section>
+    <!--<button id="go">Consiga o passaporte</button>-->
+
+    <script src="index.js">
+    </script>
+    
+</body>
+</html>

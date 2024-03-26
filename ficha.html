@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Criação de ficha</h1>
+    <section id="igneo" class="ficha">
+        <div class="visible" id="card">
+            <img src="img/IGNEO.png" alt="" class="bandeira">
+            <h2>Igneo</h2>
+            <button onclick="readigneo()" id="buttonigneo">Leia mais</button>
+        </div>
+        <div class="invisible" id="igvis">
+            <h3>História da nação</h3>
+            <p>
+                Uma nação que prioriza o espiritual e segue uma religião politeísta. 
+                Seus rituais são voltados a duas tribos, sendo elas, Sangue, 
+                uma tribo que tende a seguir os deuses da guerra e amor, 
+                seus corpos são suas ferramentas de ataque e defesa, 
+                sendo considerados narcisistas. A tribo seguinte é a da Alma, 
+                seguem aos deuses da mente e morte, rituais com os mortos são sua ferramenta de ataque. 
+                Igneo tem péssima relação com toda as outras nações, 
+                principalmente com Áureo que continuamente sofre atentados da tribo do sangue.
+            </p>
+            <h3>Convicção da nação</h3>
+            <p>
+                Não acreditam em uma cura por acharem que os deuses estão matando os impuros e querem conhecer Morke para levar seus sarcedotes e os puros (aqueles não afetados pela doença) e recomeçarem sua nação. 
+                Escravizar todos os curandeiros está em uma de suas metas, 
+                porém não conseguem chegar até a ilha sem a ajuda tecnológica da nação Áureo.
+            </p>
+            <a class="form" onclick="sangueform()">Sangue</a>
+            <a class="form" onclick="almaform()">Alma</a>
+        </div>
+    </section>
+    <section id="nomade" class="ficha">
+        <div class="visible">
+            <img src="img/Bandeira nomades.png" alt="">
+            <h2>Nômades</h2>
+            <button onclick="readnomade()"  id="buttonnomade">Leia mais</button>
+        </div>
+        <div class="invisible" id="novis">
+            <h3>História da nação</h3>
+            <p>Não é uma nação, mas um estilo de vida adotado por aqueles que não 
+                concordam com o que é estabelecido pelas nações (Igneo e Áureo) e 
+                decidem viver de sua própria forma ou pessoas que foram expulsas 
+                ou estão sendo procuradas por serem criminosos. 
+                Tendem a não ter relações com Igneo, 
+                porém são eventualmente contratados pela nação de Áureo 
+                (até mesmo criminoso) para fazerem serviços perigosos como: 
+                exploração de um local, atentados, experimentos.
+            </p>
+            <h3>Contrato</h3>
+            <p>Foram contratados pelas nações para servirem dando a vida para 
+                quem decidiu seguir rumo a Morke e 
+                pagos ao final da missão e perdoados de qualquer delito 
+            </p>
+            <a class="form" onclick="exploradoresform()">Exploradores</a>
+            <a class="form" onclick="banidosform()">Banidos</a>
+        </div>
+    </section>
+    <section id="aureo" class="ficha">
+        <div class="visible">
+            <img src="img/Bandeira aureo.png" alt="">
+            <h2>Áureo</h2>
+            <button onclick="readaureo()"  id="buttonaureo">Leia mais</button>
+        </div>
+        <div class="invisible" id="auvis">
+            <h3>História da nação</h3>
+            <p>
+                Nação dedicada a criação tecnológica e arte, que tem como princípio
+                os estudos de artes rúnicas e desenvolvimento de automotas. Não são focados 
+                em poder de fogo, sendo assim uma nação ruim em combate. Tem uma péssima
+                relação com a tribo de sangue e para ações mais perigosas eles contratam 
+                pessoas nômades. 
+            </p>
+            <h3>Convicção da nação</h3>
+            <p>
+                Esta nação quer parar a propagação da doença e descobrir/coletar 
+                recursos naturais de Morke para realizar uma vacina e para reparar parte do dano
+                que os experimentos da nação fez a sua fauna e flora.
+            </p>
+            <a class="form" onclick="arteform()">Arte</a>
+            <a class="form" onclick="automataform()">Automotas</a>
+        </div>
+    </section>
+
+    <form action="" id="ficha">
+        <div id="sist-tra" class="sistemas">
+            <h3>Sistema de traços</h3>
+            <p>Tem a possibilidade de colocar de 0-5 sendo:</p>
+            <ul>
+                <li> 0 e 1 HORRIVEL, 
+                    porém no 1 você tem chance de ter um ponto de teste porém o dado será de valor alto</li>
+                <li>2 você é ruim, o dado usado continua sendo alto e serão 2 pontos de teste por atributo </li>
+                <li>3, é médio você não é bom nem ruim naquilo, 3 pontos e dado de 20(sendo necessário de 15 a 20 para ter sucesso) </li>
+                <li>4, você é bom 4 pontos dado de 20(porém tem q tirar de 10 a 15 para ser efetivo) </li>
+                <li>5, você não precisa rolar o dado porém só tem 2 pontos de teste</li>
+            </ul>
+        </div>
+          </p>
+          <div id="sist-atri" class="sistemas">
+            <h3>Sistema dos atributos</h3>
+            <p>Tendo como limite os seguintes atributos:</p>
+            <ul>
+                <li>Pontos de vida(pv) – 20 de limite (classe de sangue 30 ou 40), basicamente onde será direcionado o dano, Ex: caso tenha 5 de vida e vem um dano de 2, sua vida cairá para 3</li>
+                <li>Força – 10 de limite, será o máximo definido na força + (número dado/2)</li>
+                <li>Defesa – 10 de limite, basicamente a diminuição de dano recebido (sendo magico ou físico aqui não tem muito essa diferença), ex: tenho 5 de vida e vem um dano de 2, mas tenho 1 de defesa, minha vida só cairá 1 totalizando 4 de vida</li>
+                <li>Mental – 10 de limite (classe de alma tem 40), basicamente funciona como uma definição de como você está com a situação que está ocorrendo, podendo diminuir ou aumentar com testes impostos pelo mestre. EX: uma situação de raiva se seu mental estiver 10 ele pode diminuir pelo teste. Caso falhe e chegue a 0 você será possuído pelo sentimento de raiva perdendo o controle total de si</li>
+                <li>Limite de distribuição das classes Banidos, Arte e exploradores será de 35</li>
+                <li>Limite de distribuição dos símbolos de sangue será: Simbolo de ataque (30 de pv já definido) mais 15 para distribuição. Simbolo de defesa (40 de pv já definido) mais 10 para distribuição</li>
+                <li>Limite de distribuição da classe Alma será: 40 de mental já definido mais 15 para distribuição</li>
+                <li>Limite de distribuição da classe automata será: 10 de vida base para quem controla 30 para distribuição</li>
+            </ul>
+          </div>
+
+        <div id="caracteristicas">
+            <!--Caracteristicas-->
+            <label for="nome">Digite o nome do seu personagem</label>
+            <input type="text" name="nome" id="nome">
+            <label for="idade">Digite a idade do seu personagem</label>
+            <input type="text" name="idade" id="idade">
+        </div>
+        <div id="atributos">
+            <!--Atributos-- 
+            -->
+            <label for="vida" id="label-vida">Vida</label>
+            <input type="number" name="vida" id="vida" min="0" max="20">
+            <label for="defesa">Defesa</label>
+            <input type="number" name="defesa" id="defesa" min="0" max="10">
+            <label for="força">Força</label>
+            <input type="number" name="força" id="força" min="0" max="10">
+            <label for="mental" id="label-mental">Mental</label>
+            <input type="number" name="mental" id="mental" min="0" max="10">
+
+        </div>
+        <div id="traço">
+            <!--Traço de personalidade-->
+            <label for="tatica">tática</label>
+            <input type="number" name="tatica" id="tatica" min="0" max="5">
+            <label for="fortitude">fortitude</label>
+            <input type="number" name="fortitude" id="fortitude" min="0" max="5">
+            <label for="furtividade">furtividade</label>
+            <input type="number" name="furtividade" id="furtividade" min="0" max="5">
+            <label for="astuto">astuto</label>
+            <input type="number" name="astuto" id="astuto" min="0" max="5">
+            <label for="atletismo">atletismo</label>
+            <input type="number" name="atletismo" id="atletismo" min="0" max="5">
+            <label for="carisma">carisma</label>
+            <input type="number" name="carisma" id="carisma" min="0" max="5">
+            <label for="intimidação">intimidação</label>
+            <input type="number" name="intimidação" id="intimidação" min="0" max="5">
+            <label for="diplomacia">diplomacia</label>
+            <input type="number" name="diplomacia" id="diplomacia" min="0" max="5">
+            <label for="sabedoria">sabedoria</label>
+            <input type="number" name="sabedoria" id="sabedoria" min="0" max="5">
+            <label for="adaptação">adaptação</label>
+            <input type="number" name="adaptação" id="adaptação" min="0" max="5">
+        </div>
+    </form>
+    
+    <section id="ficha-final" class="ficha">
+        <p id="info-nacionalidade"></p>
+        <p id="info-nome"></p>
+        <p id="info-idade"></p>
+        <p id="info-classe"></p>
+        <p id="info-escolha"></p>
+        <h3>Atributos</h3>
+        <p id="info-vida"></p>
+        <p id="info-defesa"></p>
+        <p id="info-força"></p>
+        <p id="info-mental"></p>
+        <h3>Traços de personalidade</h3>
+        <p id="info-adaptação"></p>
+        <p id="info-sabedoria"></p>
+        <p id="info-diplomacia"></p>
+        <p id="info-intimidação"></p>
+        <p id="info-carisma"></p>
+        <p id="info-atletismo"></p>
+        <p id="info-astuto"></p>
+        <p id="info-furtividade"></p>
+        <p id="info-fortitude"></p>
+        <p id="info-tatica"></p>
+        
+        
+    </section>
+    
+    <script src="ficha.js"></script>
+
+</body>
+</html>
